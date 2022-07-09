@@ -6,25 +6,25 @@ using namespace std;
 
 class Solution {
 public:
-    bool isHappy(int n) {
-        unordered_map<int, int> m;
-        int t = n, num = 0;
-        while (t != 1)
+    bool isHappy(int num) {
+        unordered_map<int, int> hash_map;
+        while (num > 1)
         {
-            if (m[t] == 1)
-                return false;
-            else
-                m[t]++;
-            n = t;
-            num = 0;
-            while (n)
+            int temp = 0;
+            while (num > 0)
             {
-                int temp = n;
-                int rem = temp % 10;
-                num += (rem * rem);
-                n = n / 10;
+                temp    += (num % 10) * (num % 10);
+                num     = num / 10;
             }
-            t = num;
+            if (1 == hash_map[temp])
+            {
+                return false;
+            }
+            else
+            {
+                hash_map[temp] = 1;
+            }
+            num = temp;
         }
         return true;
     }
@@ -32,7 +32,8 @@ public:
 
 int main(int argc, char** argv)
 {
-    Solution* soulution = new Solution;
-
+    Solution* solution  = new Solution;
+    bool happy          = solution->isHappy(19);
+    delete solution;
     return 0;
 }

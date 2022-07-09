@@ -8,19 +8,19 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         vector<int> ret = { 0, 0 };
-        unordered_map<int, int> hashMap;
+        unordered_map<int, int> hash_map;
         int current = 0, pair = target - current;
         for (unsigned int i = 0; i < nums.size(); i++)
         {
             current = nums[i];
             pair = target - current;
-            if (hashMap.find(pair) != hashMap.end())
+            if (hash_map.find(pair) != hash_map.end())
             {
                 ret[0] = i;
-                ret[1] = hashMap[pair];
+                ret[1] = hash_map[pair];
                 break;
             }
-            hashMap[current] = i;
+            hash_map[current] = i;
         }
         return ret;
     }
@@ -35,5 +35,6 @@ int main(int argc, char** argv)
     {
         cout << "i = " << i << endl;
     }
+    delete soulution;
     return 0;
 }
