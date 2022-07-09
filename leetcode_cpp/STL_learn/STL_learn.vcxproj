@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4de1745a-bd50-4e68-835f-b4cff5e8b926}</ProjectGuid>
-    <RootNamespace>twosum</RootNamespace>
+    <ProjectGuid>{846b6a2b-87e2-45b1-b8b7-3dfa98ed786e}</ProjectGuid>
+    <RootNamespace>STLlearn</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -147,7 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\two_sum.cpp" />
+    <ClCompile Include="src\STL_learn.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -16,6 +16,7 @@ public:
                 temp    += (num % 10) * (num % 10);
                 num     = num / 10;
             }
+            cout << "temp = " << temp << endl;
             if (1 == hash_map[temp])
             {
                 return false;
@@ -33,7 +34,15 @@ public:
 int main(int argc, char** argv)
 {
     Solution* solution  = new Solution;
-    bool happy          = solution->isHappy(19);
+    bool happy          = solution->isHappy(1029979);
+    if (true == happy)
+    {
+        cout << "This is a happy number" << endl;
+    }
+    else
+    {
+        cout << "This is not a happy number" << endl;
+    }
     delete solution;
     return 0;
 }
