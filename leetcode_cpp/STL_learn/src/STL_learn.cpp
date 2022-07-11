@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <functional>
 #include <vector>
+#include <map>
 
 using namespace std;
 
@@ -40,8 +41,10 @@ int main(int argc, char** argv)
 	{
 		cout << "V[" << i << "] = " << V[i] << endl;
 	}
-			
+	
+	// Map
 	// -------------------------------------------------
+	map<int, int> first_map;
 
 	return 0;
 }
