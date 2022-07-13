@@ -29,7 +29,7 @@ void print_linked_list(Node* node)
 {
 	while (node != NULL)
 	{
- 		std::cout << node->get_value() << std::endl;
+		std::cout << node->get_value() << std::endl;
 		node = node->get_next();
 	}
 }
