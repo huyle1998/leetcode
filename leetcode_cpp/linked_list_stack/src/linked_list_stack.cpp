@@ -37,14 +37,17 @@ private:
 
 public:
 	Node* head;
+	Node* current;
 	Stack()
 	{
 		head = new Node;
+		current = head;
 	}
 	void push(T element)
 	{
-		head->get_next(new Node);
-		head->set_value(element);
+		current->set_next(new Node);
+		current->set_value(element);
+		current = current->get_next();
 	}
 	void pop()
 	{
@@ -53,7 +56,6 @@ public:
 	unsigned int size()
 	{
 		unsigned int s;
-
 		return s;
 	}
 	T top()
@@ -95,5 +97,7 @@ int main(int argc, char** argv)
 {
 	Stack<int>* stack1 = new Stack<int>;
 	stack1->push(5);
+	stack1->push(3);
+	stack1->push(4);
 	return 0;
 }
