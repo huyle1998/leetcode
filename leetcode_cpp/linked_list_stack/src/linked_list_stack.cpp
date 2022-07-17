@@ -1,4 +1,6 @@
 #include <iostream>
+
+
 template <typename T>
 class Node {
 
@@ -232,6 +234,7 @@ public:
 int main(int argc, char** argv)
 {
 	Stack<int>* stack1 = new Stack<int>;
+	Queue<int>* queue1 = new Queue<int>;
 	stack1->push(5);
 	stack1->push(4);
 	stack1->push(3);
