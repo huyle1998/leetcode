@@ -43,9 +43,9 @@ private:
 public:
 	Stack()
 	{
-		head	= NULL;
-		temp	= NULL;
-		m_size	= 0;
+		head = NULL;
+		temp = NULL;
+		m_size = 0;
 	}
 	~Stack()
 	{
@@ -129,7 +129,7 @@ private:
 	Node<T>* p_back;
 	Node<T>* p_temp;
 	unsigned int m_size;
-	
+
 public:
 	Queue()
 	{

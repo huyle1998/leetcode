@@ -31,19 +31,18 @@ void insertion_sort(std::vector<T>& list, const bool& is_increase)
 					break;
 				}
 			}
-
 		}
 	}
 	list.assign(sorted_list.begin(), sorted_list.end());
 }
-
+ 
 void main(int argc, char** argv)
 {
-	std::vector<int> odev_list = { 3,2,10,5,8,4,7,11,1,33 };
+	std::vector<float> odev_list = { 3.2,2.4,10.1,5.2,8.2,4.7,7.7,11.4,1.6,33.22,12.141,0.99,55.56 };
 	bool is_increase = false;
-	insertion_sort <int>(odev_list, is_increase);
+	insertion_sort <float>(odev_list, is_increase);
 	std::cout << "odev_list after insertion_sort: ";
-	for (int i : odev_list) {
+	for (float i : odev_list) {
 		std::cout << i << " ";
 	}
 }
