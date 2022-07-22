@@ -37,8 +37,8 @@ private:
 
 public:
 	Stack() {
-		p_head = NULL;		// object A
-		p_temp = NULL;		// 
+		p_head = NULL;		
+		p_temp = NULL;		
 		m_size = 0;
 	}
 	~Stack() {
@@ -59,7 +59,6 @@ public:
 		p_temp = new Node<T>(element);
 		if (empty()) {
 			p_head = p_temp;
-			p_tail = p_temp;
 		}
 		else {
 			p_temp->set_next(p_head); // hét
