@@ -247,6 +247,6 @@ int main(int argc, char** argv)
 	stack1->pop();
 	stack1->pop();
 	std::cout << "size of stack =  " << stack1->size() << std::endl;
-	delete stack1;
+	delete stack1,queue1;
 	return 0;
 }
