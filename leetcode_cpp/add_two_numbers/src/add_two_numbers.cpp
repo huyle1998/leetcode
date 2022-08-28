@@ -21,8 +21,14 @@ public:
         while (p_list1 != NULL || p_list2 != NULL || is_remember)
         {
             val_temp = 0;
-            if (p_list1 != NULL)        val_temp += p_list1->val;
-            if (p_list2 != NULL)        val_temp += p_list2->val;
+            if (p_list1 != NULL) {
+                val_temp += p_list1->val;
+                p_list1 = p_list1->next;
+            }
+            if (p_list2 != NULL) {
+                val_temp += p_list2->val;
+                p_list2 = p_list2->next;
+            }
 
             if (is_remember)            val_temp += 1;
 
@@ -42,8 +48,6 @@ public:
                 p_temp->next = node;
             }
             p_temp = node;
-            if (p_list1 != NULL) p_list1 = p_list1->next;
-            if (p_list2 != NULL) p_list2 = p_list2->next;
         }
         return p_list_sum;
     }
