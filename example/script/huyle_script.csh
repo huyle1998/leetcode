@@ -6,3 +6,5 @@ ls > script.csh
 cat script.csh
 mv scipt/ script/
 
+# 22h56. 30nov2033
+git pull = git fetch + git merge
