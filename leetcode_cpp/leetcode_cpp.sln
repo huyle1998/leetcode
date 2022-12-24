@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.32421.90
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "two_sum", "two_sum\two_sum.vcxproj", "{4DE1745A-BD50-4E68-835F-B4CFF5E8B926}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "longest_substring", "longest_substring\longest_substring.vcxproj", "{EFA67B19-4C03-47AD-AB04-13EDAD5C8FE5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "validateBST", "validateBST\validateBST.vcxproj", "{65C7EDC4-35A7-43BB-BEF7-DF578A718970}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "thread_condition_variable", "thread_condition_variable\thread_condition_variable.vcxproj", "{E621F338-59DD-4481-B463-A4F850549E73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +133,14 @@ Global
 		{65C7EDC4-35A7-43BB-BEF7-DF578A718970}.Release|x64.Build.0 = Release|x64
 		{65C7EDC4-35A7-43BB-BEF7-DF578A718970}.Release|x86.ActiveCfg = Release|Win32
 		{65C7EDC4-35A7-43BB-BEF7-DF578A718970}.Release|x86.Build.0 = Release|Win32
+		{E621F338-59DD-4481-B463-A4F850549E73}.Debug|x64.ActiveCfg = Debug|x64
+		{E621F338-59DD-4481-B463-A4F850549E73}.Debug|x64.Build.0 = Debug|x64
+		{E621F338-59DD-4481-B463-A4F850549E73}.Debug|x86.ActiveCfg = Debug|Win32
+		{E621F338-59DD-4481-B463-A4F850549E73}.Debug|x86.Build.0 = Debug|Win32
+		{E621F338-59DD-4481-B463-A4F850549E73}.Release|x64.ActiveCfg = Release|x64
+		{E621F338-59DD-4481-B463-A4F850549E73}.Release|x64.Build.0 = Release|x64
+		{E621F338-59DD-4481-B463-A4F850549E73}.Release|x86.ActiveCfg = Release|Win32
+		{E621F338-59DD-4481-B463-A4F850549E73}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

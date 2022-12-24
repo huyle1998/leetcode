@@ -1,50 +1,27 @@
-#define arr_type	double
-
 #include <iostream>
-#include <algorithm>
-#include <functional>
-#include <vector>
-#include <map>
-
+#include <string>
 using namespace std;
+class Int {
+    int x;
 
-int main(int argc, char** argv)
+public:
+    Int(int x_in = 0)
+        : x{ x_in }
+    {
+        cout << "Conversion Ctor called" << endl;
+    }
+    operator string()
+    {
+        cout << "Conversion Operator" << endl;
+        return to_string(x);
+    }
+};
+int main()
 {
-	// Algorithm 
-	// -------------------------------------------------
- 
-	//arr_type fdata[] = {19.2, 87.4, 30.6, 55.0, 75.6};
-	//sort(fdata, fdata + _countof(fdata), greater<arr_type>());
-	//for (int i = 0; i < _countof(fdata); i++)
-	//{
-	//	cout << fdata[i] << endl;
-	//}
-
-	// ------------------------------------------------
-
-
-
-	// Vectors
-	// -------------------------------------------------
-
-	vector<int> V;
-	V.push_back(10);
-	V.push_back(2);
-	V.push_back(4);
-	V.push_back(0);
-	V.push_back(9);
-
-	V[2] = 5;
-	V[4] = 6;
-
-	for (int i = 0; i < V.size(); i++)
-	{
-		cout << "V[" << i << "] = " << V[i] << endl;
-	}
-	
-	// Map
-	// -------------------------------------------------
-	map<int, int> first_map;
-
-	return 0;
+    Int obj(3);
+    string str = obj;
+    obj = 20;
+    string str2 = static_cast<string>(obj);
+    obj = static_cast<Int>(30);
+    return 0;
 }
