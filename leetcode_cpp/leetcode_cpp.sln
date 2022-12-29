@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "validateBST", "validateBST\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "thread_condition_variable", "thread_condition_variable\thread_condition_variable.vcxproj", "{E621F338-59DD-4481-B463-A4F850549E73}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "threadsafe_stack", "threadsafe_stack\threadsafe_stack.vcxproj", "{C4E3ABFB-3F99-4C97-B868-A60CAC5F67E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{E621F338-59DD-4481-B463-A4F850549E73}.Release|x64.Build.0 = Release|x64
 		{E621F338-59DD-4481-B463-A4F850549E73}.Release|x86.ActiveCfg = Release|Win32
 		{E621F338-59DD-4481-B463-A4F850549E73}.Release|x86.Build.0 = Release|Win32
+		{C4E3ABFB-3F99-4C97-B868-A60CAC5F67E7}.Debug|x64.ActiveCfg = Debug|x64
+		{C4E3ABFB-3F99-4C97-B868-A60CAC5F67E7}.Debug|x64.Build.0 = Debug|x64
+		{C4E3ABFB-3F99-4C97-B868-A60CAC5F67E7}.Debug|x86.ActiveCfg = Debug|Win32
+		{C4E3ABFB-3F99-4C97-B868-A60CAC5F67E7}.Debug|x86.Build.0 = Debug|Win32
+		{C4E3ABFB-3F99-4C97-B868-A60CAC5F67E7}.Release|x64.ActiveCfg = Release|x64
+		{C4E3ABFB-3F99-4C97-B868-A60CAC5F67E7}.Release|x64.Build.0 = Release|x64
+		{C4E3ABFB-3F99-4C97-B868-A60CAC5F67E7}.Release|x86.ActiveCfg = Release|Win32
+		{C4E3ABFB-3F99-4C97-B868-A60CAC5F67E7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
