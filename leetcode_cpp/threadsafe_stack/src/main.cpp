@@ -4,10 +4,13 @@
 #include <memory>
 #include <stack>
 #include <exception>
+#include <new>
+
 
 struct empty_stack : std::exception {
 	const char* what() const throw();
 };
+
 
 template<typename T>
 class threadsafe_stack {
@@ -34,7 +37,7 @@ public:
 		if (_data_stack.empty()) {
 			throw empty_stack();
 		}
-		std::shared_ptr<T> const res(std::make_shared<T>(std::move(_data_stack.top()));
+		std::shared_ptr<T> const res(std::make_shared<T>(std::move(_data_stack.top())));
 		_data_stack.pop();
 		return res;
 	}
@@ -44,7 +47,7 @@ public:
 		if (_data_stack.empty()) {
 			throw empty_stack();
 		}
-		value = std::move(_data_stack.top();
+		value = std::move(_data_stack.top());
 		_data_stack.pop();
 	}
 
@@ -54,7 +57,12 @@ public:
 	}
 };
 
+
 int main() {
+	std::nothrow_t n;
+
+	int* p = new int();
+	delete p;
 
 	return 0;
 }

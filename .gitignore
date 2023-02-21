@@ -1,2 +1,15 @@
 /leetcode_cpp/bin/*
 /leetcode_cpp/.vs/*
+leetcode_cpp/packages/
+leetcode_cpp/shared_memory/x64/Debug/
+leetcode_cpp/shared_memory/x64/
+leetcode_cpp/simple_thread_pool/Release/simple_thread_pool.iobj
+*.obj
+*.log
+leetcode_cpp/simple_thread_pool/Release/simple_t.52b8dc7d.tlog/CL.command.1.tlog
+leetcode_cpp/simple_thread_pool/Release/
+*.recipe
+*.ilk
+leetcode_cpp/simple_thread_pool/x64/
+leetcode_cpp/thread_condition_variable/x64/Release/thread_condition_variable.vcxproj.FileListAbsolute.txt
+leetcode_cpp/threadsafe_stack/x64/Release/threadsafe_stack.vcxproj.FileListAbsolute.txt
